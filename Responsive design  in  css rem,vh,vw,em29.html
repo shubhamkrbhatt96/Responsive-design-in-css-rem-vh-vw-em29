@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design in css rem,vh,vw,em / size units</title>
+    <style>
+        /* html which is your root element */
+        html{
+            font-size: 25px;
+            /* rem font-size will figure out the font-size in accordance with html root element */
+        }
+        .container{
+            /* height: 4oopx; */
+            /* Not to bring the height of the box on the entire page as entirely use vh (view port height) */
+            height: 100vh;
+            /* width: 350px; */
+            /* Same for width to attain for the entire box on entire page use width as vw (view port width) */
+            width: 100vw;
+            font-size: 10px;
+            border: 2px solid red;
+        }
+h1{
+    text-align: center;
+}
+#first{
+    /* when you want to use the font-size in accordance with the parent then use em font-size */
+    /* font-size em which depends upon its parent. */
+    /* font-size: 3em;
+    padding: 3em; */
+}
+#Second{
+    /* Use of rem will cordinate the computation directly with html . */
+    /* html jo root element hai uske font-size ke according adjust ho jayega. */
+    /* when you want to keep the entire page of site equal then you use font-size as rem. */
+    /* font-size: 3rem;
+    padding: 3rem; */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is First Heading</h1>
+        <h1 id="Second">This is Second Heading</h1>
+        <h1 id="Third">This is Third Heading</h1>
+        <h1 id="Fourth">This is Fourth Heading</h1>
+    </div>
+</body>
+</html>
